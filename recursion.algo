@@ -1,0 +1,19 @@
+ALGORITHM is_palindrome
+VAR
+    word: STRING
+    left_index, right_index: INTEGER
+BEGIN
+    //read word from user input
+        left_index = 1
+        right_index = length(word)
+        WHILE left_index < right_index DO
+        IF word[left_index] != word[right_index] THEN
+        print word, " is not a palindrome"
+        RETURN
+        END_IF
+            left_index = left_index + 1
+            right_index = right_index - 1
+        END_WHILE
+            print word, " is a palindrome"
+END
+
